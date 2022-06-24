@@ -35,8 +35,9 @@
 .search-btn {
   border: 0;
   background: transparent;
-  border-right: 1px solid $border-color;
-  border-left: 1px solid $border-color;
+  border-right: 0px solid $border-color;
+  border-left: 0px solid $border-color;
+  padding-right: 6px;
 }
 
 .search-wrapper {

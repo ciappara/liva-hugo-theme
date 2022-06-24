@@ -11,7 +11,13 @@
           <div class="row no-gutters align-items-center">
             <div class="col-md-5">
               {{ if .Params.Image }}
-              <img src="{{ .Params.Image | absURL }}" class="card-img" alt="{{ .Title | markdownify }}">
+              <figure style="margin: 0px; width: 100%; min-height: 409px; background-color: red; overflow: hidden;">
+                <div style="background: url('{{ .Params.Image | absURL }}');
+                height: 409px;
+                background-size: cover;
+                background-position: center center;"></div>
+              </figure>
+              <!-- <img src="{{ .Params.Image | absURL }}" class="card-img" alt="{{ .Title | markdownify }}"> -->
               {{ end }}
             </div>
             <div class="col-md-6 offset-md-1">

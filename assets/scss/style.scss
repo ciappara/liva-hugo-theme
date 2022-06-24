@@ -22,3 +22,71 @@ VERSION:	Versoin Number
 @import 'templates/navigation.scss';
 
 @import 'templates/main.scss';
+
+
+.header-banner {
+    backdrop-filter: blur(16px);
+    background-color: rgba(241, 242, 244, 0.8);
+    border-bottom-color: rgb(223, 227, 231);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    box-sizing: border-box;
+    color: rgb(25, 28, 31);
+    display: flex;
+    font-family: "Basier Circle", sans-serif;
+    font-size: 16px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    height: 69px;
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header-content {
+    @apply px-4 py-4 sm:px-1;
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(25, 28, 31);
+    display: flex;
+    font-family: "Basier Circle", sans-serif;
+    font-size: 16px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    height: 68px;
+    justify-content: space-between;
+    line-height: normal;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+    width: 1000px;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    -webkit-font-smoothing: antialiased;
+}
+
+.btn-login {
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    margin-left: 0.5rem;
+}

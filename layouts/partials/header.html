@@ -1,5 +1,38 @@
+
+
 {{ "<!-- navigation -->" | safeHTML }}
-<header class="navigation">
+<header role="banner" class="header-banner">
+  <div class="header-content">
+      <a aria-label="Wow.mt" href="{{ .Site.BaseURL }}">
+          <div>
+              <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" class="h-11">
+          </div>
+      </a>
+      <div>
+        
+        {{ if .Site.Params.search.enable }}
+        {{ "<!-- search -->" | safeHTML }}
+        <div class="search pl-lg-4" style="display: inline;">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="{{ .Site.BaseURL }}/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        {{ end }}
+
+        <a href="https://wow.mt/auth/login" class="btn-login">Log in</a>
+        <a href="https://wow.mt/auth/register" class="btn-login">Sign up</a>
+        &nbsp;&nbsp;
+        
+      </div>
+  </div>
+</header>
+
+
+<header class="navigation" style="visibility: hidden; display: none;">
   <div class="container">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
@@ -67,4 +100,6 @@
     </nav>
   </div>
 </header>
+
+
 {{ "<!-- /navigation -->" | safeHTML }}
