@@ -23,13 +23,12 @@
 
 
   {{ "<!-- Global site tag (gtag.js) - Google Analytics -->" | safeHTML }}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalitycsID }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalyticsId }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', '{{ .Site.Params.googleAnalitycsID }}');
+    gtag('config', '{{ .Site.Params.googleAnalyticsId }}');
   </script>
 
 
@@ -46,7 +45,7 @@
       a.src = g;
       m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
+    ga('create', '{{ .Site.Params.googleAnalyticsId }}', 'auto');
     ga('send', 'pageview');
   </script> -->
 
