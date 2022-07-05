@@ -253,14 +253,15 @@
     li {
       position: relative;
       padding-left: 20px;
+      margin-left: 20px;
       margin-bottom: 15px;
       list-style-type: none;
 
       &::before {
         position: absolute;
-        content: "\e71b";
+        content: "\e649"; //https://www.noelprojects.com/wp-content/themes/Noel/assets/lib/themify-icons/
         font-family: $icon-font;
-        font-size: 14px;
+        font-size: 13px;
         left: 0;
         top: 1px;
         color: $primary-color;

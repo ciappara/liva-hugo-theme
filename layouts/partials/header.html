@@ -3,9 +3,9 @@
 {{ "<!-- navigation -->" | safeHTML }}
 <header role="banner" class="header-banner">
   <div class="header-content">
-      <a aria-label="Wow.mt" href="{{ .Site.BaseURL }}">
+      <a aria-label="WOW.mt Blog" href="{{ .Site.BaseURL }}"> <!-- .Site.Params.mainUrl -->
           <div>
-              <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" class="h-11">
+              <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" class="h-9">
           </div>
       </a>
       <div>
@@ -23,8 +23,8 @@
         </div>
         {{ end }}
 
-        <a href="https://wow.mt/auth/login" class="btn-login">Log in</a>
-        <a href="https://wow.mt/auth/register" class="btn-login">Sign up</a>
+        <a href="https://wow.mt/auth/login" class="btn-login">Login</a>
+        <a href="https://wow.mt/auth/register" class="btn-login">Register</a>
         &nbsp;&nbsp;
         
       </div>
