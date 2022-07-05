@@ -1,7 +1,9 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ if .Page.Title }}{{ .Page.Title }} | {{ .Site.Title }}{{ end }}{{ end }}</title>
+  <title>{{ if .IsHome }}Platform for Performers and Creatives | {{ .Site.Title }}{{ else }}{{ if .Page.Title }}{{ .Page.Title }} | {{ .Site.Title }}{{ end }}{{ end }}</title>
   <!-- <title>{{ .Site.Title }}</title> -->
+  
+  {{ template "_internal/opengraph.html" . }}
 
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
