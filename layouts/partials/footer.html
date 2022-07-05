@@ -115,6 +115,14 @@
 <script src="{{ $script.Permalink }}"></script>
 
 
+{{ if site.Params.googleTagManagerEnable }}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.googleTagManagerID }}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+{{ end }}
+
+
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
