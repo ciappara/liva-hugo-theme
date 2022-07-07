@@ -35,7 +35,7 @@
 
 .btn-outline-primary {
   background: transparent;
-  color: $text-color-dark;
+  color: $primary-color; //$text-color-dark;
   border-color: $primary-color;
 
   &:active,

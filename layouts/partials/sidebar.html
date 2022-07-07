@@ -1,6 +1,9 @@
-<div class="col-lg-4 d-none">
+{{ if .Site.Params.Sidebar.enable }}
+<div class="col-lg-4">
   <div class="widgets">
+    
     <!-- about -->
+    {{ if .Site.Params.Sidebar.showAbout }}
     <div class="widget">
       {{ with .Site.GetPage "/about" }}
       <h4 class="widget-title">{{ .Title | markdownify }}</h4>
@@ -12,6 +15,9 @@
       <a href="{{ .Permalink }}" class="btn btn-outline-primary">Know More</a>
       {{ end }}
     </div>
+    {{ end }}
+
+
     <!-- category -->
     <div class="widget">
       <h4 class="widget-title">Category</h4>
@@ -56,3 +62,4 @@
     </div>
   </div>
 </div>
+{{ end }}

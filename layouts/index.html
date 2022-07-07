@@ -48,6 +48,7 @@
 </section>
 <!-- /featured post -->
 
+{{ if .Site.Params.showRecentPosts }}
 <!-- recent post -->
 <section>
   <div class="container">
@@ -76,16 +77,17 @@
   </div>
 </section>
 <!-- /recent post -->
+{{ end }}
 
 <!-- blog post -->
 <section class="section pb-0">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mb-5 mb-lg-0">
+      <div class="{{ if .Site.Params.sidebar.enable }} col-lg-8 {{ else }} col-lg-12 {{ end }} mb-5 mb-lg-0">
         <div class="row">
           {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
           {{ range $paginator.Pages }}
-          <div class="col-md-6 mb-4">
+          <div class="{{ if .Site.Params.sidebar.enable }} col-md-6 {{ else }} col-md-4 {{ end }} mb-4">
             <article class="card">
               {{ if .Params.Image }}
               <img src="{{ .Params.Image | absURL }}" class="card-img-top" alt="{{ .Title | markdownify }}">
