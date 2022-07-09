@@ -182,6 +182,9 @@ a.text-dark:hover {
 
 .border-primary {
   border-color: $primary-color !important;
+  @include tablet {
+    border: none !important;
+  }
 }
 
 .font-weight-medium{
