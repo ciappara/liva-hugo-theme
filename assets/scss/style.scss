@@ -70,6 +70,7 @@ VERSION:	Versoin Number
     // }
 }
 
+.btn-blog,
 .btn-login {
     background-color: black;
     color: white;
@@ -86,6 +87,19 @@ VERSION:	Versoin Number
     &:hover {
         background-color: white;
         color: black;    
+    }
+}
+.btn-blog {
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    --tw-gradient-from: #22d3ee;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(34 211 238 / 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #9333ea, var(--tw-gradient-to, rgb(147 51 234 / 0));
+    --tw-gradient-to: #be185d;
+    margin-right: 0.1rem;
+
+    &:hover {
+        background-color: white!important;
+        color: white;    
     }
 }
 
