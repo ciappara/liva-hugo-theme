@@ -300,7 +300,7 @@
 
 
   blockquote {
-    padding: 20px;
+    padding: 30px 20px;
     background: $gray;
     border-left: 3px solid $primary-color;
 
@@ -308,6 +308,8 @@
       margin-bottom: 0;
       color: $text-color-dark;
       font-style: italic !important;
+      font-size: 17px !important;
+      text-align: center !important;
     }
   }
 
