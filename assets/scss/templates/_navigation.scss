@@ -38,6 +38,11 @@
   border-right: 0px solid $border-color;
   border-left: 0px solid $border-color;
   padding-right: 6px;
+  color: white;
+
+  &:hover {
+    color: #CB01AD;
+  }
 }
 
 .search-wrapper {

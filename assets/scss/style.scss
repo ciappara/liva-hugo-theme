@@ -25,8 +25,10 @@ VERSION:	Versoin Number
 
 
 .header-banner {
+    background-image: url('../images/wallpaper.svg');
+    background-size: cover;
     backdrop-filter: blur(16px);
-    background-color: rgba(241, 242, 244, 0.8);
+    //background-color: rgba(241, 242, 244, 0.8);
     border-bottom-color: rgb(223, 227, 231);
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -70,23 +72,48 @@ VERSION:	Versoin Number
     // }
 }
 
+@media (min-width: 720px) {
+    .header-content {
+        max-width: 720px;
+        width: 720px;
+    }
+}
+@media (min-width: 960px) {
+    .header-content {
+        max-width: 960px;
+        width: 960px;
+    }
+}
+@media (min-width: 1140px) {
+    .header-content {
+        max-width: 1140px;
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1320px) {
+    .header-content {
+        max-width: 1320px;
+        width: 1320px;
+    }
+}
+
+
 .btn-blog,
 .btn-login {
-    background-color: black;
-    color: white;
+    background-color: #FFFFFF40 !important; // rgb(255 255 255 / 0.2) !important;
+    padding: 12px 24px !important;
+    color: white !important;
     font-weight: 500;
-    line-height: 1.5rem;
-    padding: 0.5rem 0.7rem;
+    line-height: 24px;
     border-radius: 0.35rem;
     margin-left: 0.1rem;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-family: 'Raleway';
-    letter-spacing: 0.1rem;
+    font-size: 16px;
+    font-family: 'Inter', 'Raleway';
 
     &:hover {
-        background-color: white;
-        color: black;    
+        background-color: #CB01AD !important;
+        color: white;
     }
 }
 .btn-blog {
