@@ -4,11 +4,11 @@
 <header role="banner" class="header-banner">
   <div class="header-content">
       <a aria-label="WOW.mt Blog" href="{{ .Site.BaseURL }}"> <!-- .Site.Params.mainUrl -->
-          <div>
+          <div class="w-header-logo">
               <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"> <!-- class="h-9" -->
           </div>
       </a>
-      <div>
+      <div class="w-header-nav">
         
         {{ if .Site.Params.search.enable }}
         {{ "<!-- search -->" | safeHTML }}
@@ -23,9 +23,9 @@
         </div>
         {{ end }}
 
-        <!-- <a href="https://wow.mt" class="btn-blog">WOW</a> -->
-        <!-- <a href="https://wow.mt/auth/login" class="btn-login">Login</a> -->
-        <a href="https://wow.mt/auth/register" class="btn-login">Register</a>
+        <a href="https://wow.mt" class="btn-login">WOW</a>
+        <a href="https://wow.mt/auth/login" class="btn-login">Login</a>
+        <a href="https://wow.mt/auth/register" class="btn-register">Register</a>
         
       </div>
   </div>

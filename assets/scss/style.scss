@@ -100,9 +100,9 @@ VERSION:	Versoin Number
 
 
 .btn-blog,
-.btn-login {
-    background-color: #FFFFFF40 !important; // rgb(255 255 255 / 0.2) !important;
-    padding: 12px 24px !important;
+.btn-login,
+.btn-register {
+    background-color: #FFFFFF00 !important; // rgb(255 255 255 / 0.2) !important;
     color: white !important;
     font-weight: 500;
     line-height: 24px;
@@ -115,6 +115,13 @@ VERSION:	Versoin Number
         background-color: #CB01AD !important;
         color: white;
     }
+}
+.btn-login {
+    padding: 12px 18px !important;
+}
+.btn-register {
+    background-color: #FFFFFF40 !important;
+    padding: 12px 24px !important;
 }
 .btn-blog {
     background-image: linear-gradient(to right,var(--tw-gradient-stops));
@@ -133,4 +140,22 @@ VERSION:	Versoin Number
 img[src$='#center'] {
     display: block;
     margin: 0 auto;
+}
+
+
+@media (max-width: 660px) {
+    .header-content {
+        width: 100%;
+        display: block;
+    }
+    .header-banner {
+        height: 110px;
+    }
+    .w-header-logo {
+        text-align: center;
+    }
+    .w-header-nav {
+        margin-top: 20px;
+        text-align: center;
+    }
 }
