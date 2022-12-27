@@ -9,7 +9,8 @@
         {{ range ( where .Site.RegularPages "Type" "featured" )}}
         <article class="card featured-post">
           <div class="row no-gutters align-items-center">
-            <div class="col-md-5">
+
+            <div class="col-md-6">
               {{ if .Params.Image }}
               <figure style="margin: 0px; width: 100%; min-height: 409px; background-color: red; overflow: hidden;">
                 <div style="background: url('{{ .Params.Image | absURL }}');
@@ -20,9 +21,10 @@
               <!-- <img src="{{ .Params.Image | absURL }}" class="card-img" alt="{{ .Title | markdownify }}"> -->
               {{ end }}
             </div>
-            <div class="col-md-6 offset-md-1">
+            
+            <div class="col-md-6 pl-3">
               <div class="card-body">
-                <div class="mb-3 post-meta">
+                <div class="mb-0 post-meta">
                   {{ if .Params.Author }}
                     <span>By {{ .Params.Author }}</span>
                   {{ else }}
@@ -35,7 +37,7 @@
                   {{ end }}
                 </div>
                 <a href="{{ .Permalink }}"
-                  class="h1 font-weight-bold d-block text-dark mb-4 card-title">{{ .Title | markdownify }}</a>
+                  class="h1 font-weight-bold d-block text-dark mb-4 card-title" style="margin-top: 30px !important;">{{ .Title | markdownify }}</a>
                 <p class="card-text">{{.Summary}}...</p>
               </div>
             </div>
