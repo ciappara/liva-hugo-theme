@@ -25,7 +25,8 @@ VERSION:	Versoin Number
 
 
 .header-banner {
-    background-image: url('../images/wallpaper.svg');
+	background-image: radial-gradient(at right center, rgb(6, 82, 197), rgb(9, 0, 135));
+    //background-image: url('../images/wallpaper.svg');
     background-size: cover;
     backdrop-filter: blur(16px);
     //background-color: rgba(241, 242, 244, 0.8);
@@ -35,7 +36,7 @@ VERSION:	Versoin Number
     box-sizing: border-box;
     color: rgb(25, 28, 31);
     display: flex;
-    font-family: "Basier Circle", sans-serif;
+    font-family: "Geologica"; // "Basier Circle", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -54,7 +55,7 @@ VERSION:	Versoin Number
     box-sizing: border-box;
     color: rgb(25, 28, 31);
     display: flex;
-    font-family: "Basier Circle", sans-serif;
+    font-family: "Geologica"; // "Basier Circle", sans-serif;
     font-size: 16px;
     font-stretch: 100%;
     font-style: normal;
@@ -104,12 +105,12 @@ VERSION:	Versoin Number
 .btn-register {
     background-color: #FFFFFF00 !important; // rgb(255 255 255 / 0.2) !important;
     color: white !important;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 24px;
     border-radius: 0.35rem;
     margin-left: 0.1rem;
     font-size: 16px;
-    font-family: 'Inter', 'Raleway';
+    font-family: 'Geologica'; //'Inter', 'Raleway';
 
     &:hover {
         background-color: #CB01AD !important;
