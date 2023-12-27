@@ -143,6 +143,13 @@ img[src$='#center'] {
     margin: 0 auto;
 }
 
+img[src$='#center-600'] {
+    display: block;
+    margin: 0 auto;
+	width: 600px;
+    padding: 20px;
+}
+
 
 @media (max-width: 660px) {
     .header-content {
