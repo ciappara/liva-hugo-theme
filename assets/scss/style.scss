@@ -25,7 +25,8 @@ VERSION:	Versoin Number
 
 
 .header-banner {
-	background-image: radial-gradient(at right bottom,#0446ab,#090087); //radial-gradient(at right center, rgb(6, 82, 197), rgb(9, 0, 135));
+	align-items: center;
+	background-image: radial-gradient(at right bottom,#271359,#1A0D3C); //radial-gradient(at right center, rgb(6, 82, 197), rgb(9, 0, 135));
     //background-image: url('../images/wallpaper.svg');
     background-size: cover;
     backdrop-filter: blur(16px);
@@ -40,7 +41,7 @@ VERSION:	Versoin Number
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    height: 69px;
+    height: 75px;
     line-height: normal;
     margin: 0;
     padding: 0;
@@ -106,10 +107,12 @@ VERSION:	Versoin Number
     background-color: #FFFFFF00 !important; // rgb(255 255 255 / 0.2) !important;
     color: white !important;
     font-weight: 400;
-    line-height: 24px;
-    border-radius: 0.35rem;
-    margin-left: 0.1rem;
-    font-size: 16px;
+    line-height: 20px;
+    border-radius: 1.9rem;
+
+	margin-left: .3rem;
+    margin-right: .3rem;
+    font-size: 14px;
     font-family: 'Geologica'; //'Inter', 'Raleway';
 
     &:hover {
@@ -118,11 +121,12 @@ VERSION:	Versoin Number
     }
 }
 .btn-login {
-    padding: 12px 18px !important;
+    background-color: #FFFFFF40 !important;
+    padding: 11px 16px !important;
 }
 .btn-register {
-    background-color: #FFFFFF40 !important;
-    padding: 12px 24px !important;
+	border: solid 2px white;
+    padding: 9px 16px !important;
 }
 .btn-blog {
     background-image: linear-gradient(to right,var(--tw-gradient-stops));
@@ -147,6 +151,13 @@ img[src$='#center-600'] {
     display: block;
     margin: 0 auto;
 	width: 600px;
+    padding: 20px;
+}
+
+img[src$='#center-680'] {
+    display: block;
+    margin: 0 auto;
+	width: 680px;
     padding: 20px;
 }
 
