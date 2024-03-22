@@ -166,15 +166,24 @@ img[src$='#center-680'] {
     .header-content {
         width: 100%;
         display: block;
+		padding: 0;
+		height: auto;
     }
     .header-banner {
-        height: 110px;
+        height: 140px;
     }
     .w-header-logo {
         text-align: center;
     }
     .w-header-nav {
-        margin-top: 20px;
+        margin-top: 28px;
         text-align: center;
     }
+
+	.btn-blog,
+	.btn-login,
+	.btn-register {
+		margin-left: .1rem;
+		margin-right: .1rem;
+	}
 }
